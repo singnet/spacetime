@@ -2,6 +2,7 @@
 INCLUDE_DIRECTORIES(${CMAKE_BINARY_DIR})
 
 LINK_LIBRARIES(
+	spacetime-types
 	atom_octomap
 	${ATOMSPACE_LIBRARIES}
 	${COGUTIL_LIBRARY}
@@ -9,3 +10,4 @@ LINK_LIBRARIES(
 ADD_CXXTEST(AtomOcTreeUTest)
 ADD_CXXTEST(OctoValueUTest)
 ADD_CXXTEST(TimeSpaceAtomUTest)
+ADD_CXXTEST(PredictiveImplicationScopeUTest)

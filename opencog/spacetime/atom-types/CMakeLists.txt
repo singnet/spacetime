@@ -8,6 +8,7 @@ ADD_CUSTOM_TARGET(spacetime_atom_types DEPENDS atom_types.h)
 
 ADD_LIBRARY (spacetime-types SHARED
 	atom_types_init.cc
+	PredictiveImplicationScopeLink
 )
 
 TARGET_LINK_LIBRARIES(spacetime-types
